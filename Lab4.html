@@ -21,6 +21,7 @@
         text-align: left;
         padding: 10px 10px 10px 40px;
       }
+
       .footer {
         color: blue;
         margin-top: 30px;
@@ -28,11 +29,13 @@
         border-top: 2px solid #777;
         font-style: italic;
         font-size: 15px;
+        text-align: right;
       }
       h1 {
         font-size: 30px;
         text-align: center;
       }
+
       p {
         width: 450px;
         margin: 18px auto;
@@ -40,6 +43,37 @@
       p:hover {
         color: aliceblue;
         text-shadow: 3px 3px 10px #777;
+      }
+      p::first-letter {
+        color: gold;
+        font-size: 40px;
+      }
+      p::first-line {
+        background-color: #777;
+        font-size: 30px;
+        text-shadow: 3px 3px 10px #777;
+      }
+      .header:active {
+        font-size: 90px;
+        color: blueviolet;
+        font-style: italic;
+        font-weight: bold;
+      }
+      .header:hover {
+        font-size: 60px;
+        color: blueviolet;
+        font-style: italic;
+        font-weight: bold;
+      }
+      h1:hover {
+        font-size: 50px;
+        color: blanchedalmond;
+        font-weight: bold;
+      }
+      .footer:hover {
+        font-size: 40px;
+        color: #777;
+        font-style: italic;
       }
     </style>
   </head>
@@ -98,5 +132,7 @@
         И жизнь, и слезы, и любовь.
       </p>
     </div>
+
+    <div class="footer">ФБИ-03, Коломеец Е.А, Шениязов В.К</div>
   </body>
 </html>
