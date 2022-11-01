@@ -60,6 +60,21 @@
         position: relative;
 
       }
+    
+      .e {
+        border-style: groove;
+        width: 300px;
+        height: 100px;
+        background-color: rgb(21, 189, 240);
+        text-align: center;
+        line-height: 100px;
+        color: #333;
+      }
+      .e:hover {
+         color: chocolate;
+         z-index: 1;
+         background-color: rgb(0, 238, 255);
+      }
     </style>
   </head>
 
@@ -94,9 +109,10 @@
     <div>В окно увидела Татьяна</div>
     <div style="position: absolute; left: 200px; top: 100px;">Поутру побелевший двор,</div>
     <div>Куртины, кровли и забор,</div>
-    <h1>Fixed</h1>
-  <div>
-  <div style="position:fixed: bottom: 300px; right: 300px">  
+
+  <h1>Fixed</h1>
+  
+  <div style="position:fixed; bottom: 300px; right: 300px">  
     На стёклах лёгкие узоры,<br>
     Деревья в зимнем серебре,<br>
     Сорок весёлых на дворе<br>
@@ -104,6 +120,13 @@
     Зимы блистательным ковром.<br>
     Всё ярко, всё бело кругом.
     </div>
+    <div class="e" style="position: relative; top: 50px; left: 150px; z-index: o;">Блок А</div>
+    <div class="e" style="position: relative; top: 40px; left: 170px; z-index: o;">Блок Б</div>
+    <div class="e" style="position: relative; top: 30px; left: 190px; z-index: o;">Блок В</div>
+    <div class="e" style="position: relative; top: 20px; left: 210px; z-index: o;">Блок Г</div>
+    <div class="e" style="position: relative; top: 10px; left: 230px; z-index: o;">Блок Д</div>
+    
+  </div>
 <div> 
 
     <div class="footer">
