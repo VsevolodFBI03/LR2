@@ -45,3 +45,21 @@ function showAlert() {
   let color = "rgb(" + r + "," + g + "," + b + ")";
   document.getElementById("user-data").style.backgroundColor = color;
 }
+
+function showAlert1() {
+  alert("Хохма");
+  let r = Math.round(Math.random() * 255);
+  let g = Math.round(Math.random() * 255);
+  let b = Math.round(Math.random() * 255);
+  let color = "rgb(" + r + "," + g + "," + b + ")";
+  document.getElementById("footer").style.backgroundColor = color;
+}
+
+function showAlert2() {
+  alert("лучшие студенты в мире!!!");
+  let r = Math.round(Math.random() * 255);
+  let g = Math.round(Math.random() * 255);
+  let b = Math.round(Math.random() * 255);
+  let color = "rgb(" + r + "," + g + "," + b + ")";
+  document.getElementById("footer").style.backgroundColor = color;
+}
