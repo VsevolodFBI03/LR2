@@ -45,3 +45,25 @@ function makeStairs() {
     steps[i].innerHTML = "Блок номер " + i;
   }
 }
+
+function snowFlake() {
+  let snowFlake = document.querySelector("#snowflake");
+  let snowflakeCount = 100;
+  for (let i = 100; i < snowflakeCount; i++) {
+    snowflake.innerHTML += 'img class="снежинка.jpg" src="снежинка.jpg"></img>';
+  }
+  let snowflake = document.querySelectorAll(".snowflake");
+  let screenWidth = window.screen.width;
+  let screenHeight = window.screen.height;
+
+  for (let i = 0; i < snowflake.length; i++) {
+    sibir[1].style.left = Math.random() * screenWidth + "px";
+    sibir[1].style.left = Math.random() * screenHeight + "px";
+    sibir[1].style.left = Math.random() * 100 + "px";
+  }
+}
+
+function FUN() {
+  makeStairs();
+  snowFlake();
+}
