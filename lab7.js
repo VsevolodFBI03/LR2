@@ -32,17 +32,16 @@ function showAlert() {
 }
 
 function makeStairs() {
+  let stairs = document.querySelector("#stairs");
+  let stepCount = 20;
+  for (let i = 0; i < stepCount; i++) {
+    stairs.innerHTML += '<div class = "step"></div>';
+  }
 
-    let stairs = document.querySelector('#stairs');
-    let stepCount = 20;
-    for(let i = 0; i<stepCount; i++) {
-        stairs.innerHTML += '<div class = "step"></div>';
-    }
-
-    let steps = Document.querySelectorAll('.step');
-    for(let i = 0;< steps.lengt; i++){
-        step[i].style.left = (30 +10*i) +'px'; 
-        step[i].style.left = (300 +80*i) +'px'; 
-        steps[i].innerHTML = 'Блок номер' + i;
-    }
+  let steps = document.querySelectorAll(".step");
+  for (let i = 0; i < steps.length; i++) {
+    steps[i].style.left = 30 + 10 * i + "px";
+    steps[i].style.top = 300 + 80 * i + "px";
+    steps[i].innerHTML = "Блок номер " + i;
+  }
 }
